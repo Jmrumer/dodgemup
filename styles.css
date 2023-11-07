@@ -1,0 +1,28 @@
+/* styles.css */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(4, 61, 101, 1); /* Full opacity is represented by 1 */
+  display: flex;
+  justify-content: center; /* This centers the child elements horizontally */
+  height: 100vh; /* Use the full height of the viewport */
+}
+
+#gameArea {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  background-image: url('./citybg.png');
+  background-size: cover; /* This will ensure that your image covers the entire game area */
+  background-position: center; /* This will center your image in the game area */
+}
+
+#gameCanvas {
+  border: 1px solid #000; /* just for visibility */
+  display: block; /* to prevent default margin/padding */
+  margin: auto; /* optional, for centering the canvas on the page */
+  position: absolute; /* This will take the canvas out of the normal document flow */
+  top: 10px; /* Adjust as needed to move down from the top */
+  left: 10px; /* Adjust as needed to move right from the left */
+}
